@@ -1,1 +1,1 @@
-web: gunicorn appProject.wsgi
+web: gunicorn promProject.wsgi
