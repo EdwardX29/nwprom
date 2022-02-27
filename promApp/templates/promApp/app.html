@@ -1,0 +1,64 @@
+{%extends 'promApp/base.html'%}
+
+{%block main%}
+
+
+
+{%load static%}
+<link rel="stylesheet" type="text/css" href="{%static 'css/app.css'%}">
+
+{%if profileNotCreated%}
+<div id="year-cont" class="col-lg-6 offset-lg-3">
+  <span class="row justify-content-center">Enter your year before continuing 😊</span><br>
+  <div class="row justify-content-center">
+    <form method="POST" >
+    {% csrf_token %}
+      {{profileForm.as_p}}
+      <input name="profile" type="submit">
+    </form>
+  </div>
+</div>
+
+
+{%else%}
+<div class="stats">
+  <span> Number of people interested in you: {{numCrushing}}❤️</span><br>
+  <span> Number of dates remaining: {{remaining}} </span>
+</div>
+
+{%if remaining > 0%}
+<div id= "crush-cont" class="col-lg-6 offset-lg-3">
+  <span id="crushes-span" class="row justify-content-center">Dates: </span>
+  <div class="row justify-content-center">
+    <form method="POST">
+      {%csrf_token%}
+      Date name: {{crushForm.name}}
+      Date year: {{crushForm.year}}
+      <input name="crush" type="submit">
+    </form>
+  </div>
+</div>
+{%endif%}
+
+<div class="main-cont">
+  <span class="main-text"> You are interested in : </span>
+  {%for crush in crushList%}
+  <p>{{crush.name}} {{crush.year}} ❤️</p>
+  {%endfor%}
+</div>
+
+<div class="main-cont">
+  <span class="main-text">Your Matches: </span>
+  {%for name, year in matches%}
+  <p>{{name}} {{year}} 🤩 ❤️</p>
+
+  {%endfor%}
+</div>
+
+
+
+{%endif%}
+
+
+
+{%endblock main%}

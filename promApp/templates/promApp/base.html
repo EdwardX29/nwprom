@@ -1,0 +1,62 @@
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NWHS Prom</title>  
+
+  {%load bootstrap4%}
+  {%bootstrap_css%}
+  {%bootstrap_javascript jquery="full"%}
+
+  {%load static%}
+
+  <link rel="icon" type="image/x-icon" href="{%static 'favicon_io/favicon.ico'%}">
+  <link rel="manifest" href="{% static 'favicon_io/site.webmanifest'%}">
+  <link rel="stylesheet" type="text/css" href="{%static 'css/base.css'%}">
+</head>
+
+{%load socialaccount%}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-lightnavbar navbar-dark bg-danger py-3 ">
+  
+  <a class="navbar-brand title-header" href="{%url 'promApp:index'%}">NWHS Prom<span class="sr-only">(current)</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'promApp:about'%}">About</a>
+      </li>
+      {%if user.is_authenticated%}
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'promApp:app'%}">Find A Date!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'promApp:logout'%}">Log Out</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">What's poppin', {{user.get_full_name}} ({{user.email}})</a>
+      </li>
+      {%else%}
+      <li class="nav-item">
+        <a class="nav-link" href="{% provider_login_url 'google' %}">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% provider_login_url 'google' %}">Login</a>
+      </li>
+      {%endif%}
+    </ul>
+  </div>
+
+</nav>
+
+
+
+
+{%block main%}
+{%endblock main%}
