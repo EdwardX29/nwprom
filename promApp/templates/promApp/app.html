@@ -22,8 +22,8 @@
 
 {%else%}
 <div class="stats">
-  <span> Number of people interested in you: {{numCrushing}}❤️</span><br>
-  <span> Number of dates remaining: {{remaining}} </span>
+  <span> Number of people interested in you: {{numCrushing}} 💛</span><br>
+  <span> Number of dates remaining: {{remaining}} 💙 </span>
 </div>
 
 {%if remaining > 0%}
@@ -49,14 +49,14 @@
 <div class="main-cont">
   <span class="main-text"> You are interested in : </span>
   {%for crush in crushList%}
-  <p>{{crush.name}} {{crush.year}} ❤️</p>
+  <p>{{crush.name}} {{crush.year}} 💛</p>
   {%endfor%}
 </div>
 
 <div class="main-cont">
   <span class="main-text">Your Matches: </span>
   {%for name, year in matches%}
-  <p>{{name}} {{year}} 🤩 ❤️</p>
+  <p>{{name}} {{year}} 🤩 💙</p>
 
   {%endfor%}
 </div>
