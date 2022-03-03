@@ -1,8 +1,5 @@
 {%extends 'promApp/base.html'%}
-
 {%block main%}
-
-
 
 {%load static%}
 <link rel="stylesheet" type="text/css" href="{%static 'css/app.css'%}">
@@ -18,7 +15,6 @@
     </form>
   </div>
 </div>
-
 
 {%else%}
 <div class="stats">
@@ -57,14 +53,9 @@
   <span class="main-text">Your Matches: </span>
   {%for name, year in matches%}
   <p>{{name}} {{year}} 🤩 💙</p>
-
   {%endfor%}
 </div>
 
-
-
 {%endif%}
-
-
 
 {%endblock main%}

@@ -49,7 +49,6 @@ def app(request):
             if crushYear == "FR" or crushYear == "SO":
                 return redirect("promApp:sorry")
             
-
             crushForm = CreatePromDateForm(data=request.POST)
             if crushForm.is_valid():
                 crusher = Profile.objects.filter(owner=request.user).first()
@@ -66,8 +65,6 @@ def app(request):
         crushForm = CreatePromDateForm()
 
         if not profileNotCreated:
-
-            
 
             crusher = Profile.objects.filter(owner=request.user).first()
             

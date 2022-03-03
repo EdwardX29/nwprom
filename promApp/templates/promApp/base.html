@@ -9,14 +9,13 @@
   <meta property="og:url" content="https://nwprom.herokuapp.com/">
   <meta property="og:description" content="Website for NWHS Jags to find their prom dates!">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://nwprom.herokuapp.com/static/heart.png">
+  <meta property="og:image" content="https://nwprom.herokuapp.com/static/heart3.png">
 
   <title>NWHS Prom</title>  
 
   {%load bootstrap4%}
   {%bootstrap_css%}
   {%bootstrap_javascript jquery="full"%}
-
   {%load static%}
 
   <link rel="icon" type="image/x-icon" href="{%static 'favicon_io/favicon.ico'%}">
@@ -26,9 +25,7 @@
 
 {%load socialaccount%}
 
-
 <nav class="navbar navbar-expand-lg navbar-light bg-lightnavbar navbar-dark bg-danger py-3 ">
-  
   <a class="navbar-brand title-header" href="{%url 'promApp:index'%}">NWHS Prom<span class="sr-only">(current)</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -58,11 +55,7 @@
       {%endif%}
     </ul>
   </div>
-
 </nav>
-
-
-
 
 {%block main%}
 {%endblock main%}

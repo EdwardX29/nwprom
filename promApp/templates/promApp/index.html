@@ -1,18 +1,12 @@
 {%extends 'promApp/base.html'%}
 
-
 {%block main%}
 {%load static%}
 {%load socialaccount%}
 
-
-
-
 <script defer src="{%static 'js/countdown.js'%}"></script>
 <link rel="stylesheet" type="text/css" href="{%static 'css/countdown.css'%}">
 <link rel="stylesheet" type="text/css" href="{%static 'css/index.css'%}">
-
-
 
 <div class="pitch">
   <h1 id="header">🕺 NWHS Prom 💃</h1>
@@ -20,10 +14,6 @@
     <span style="font-size:1.4em; color:	#FFB6C1;">Prom is coming up really soon!</span><br>
     If you're still looking for a Prom date, you've come to the right place! <br>
     Shoot your shot to your Jag dates anonymously.<br>
-    
-    {% comment %} It is not always easy to confess your love. 
-    <br>But as a gesture by Cupid 🏹, Last Chance has descended from the heavens.
-    <br>Shoot your shot to your Jag crushes anonymously. {% endcomment %}
   </span>
 </div>
 
@@ -49,12 +39,8 @@
   </div>
 </div>
 
-{% comment %} <img src="{%static 'prom-img1.jpg'%}"> {% endcomment %}
-
 <div class="button-div">
   <a  id="love-button" class="btn btn-lg btn-outline-danger" href="{%provider_login_url 'google'%}">Find me a date!</a>
 </div>
-
-
 
 {%endblock main%}

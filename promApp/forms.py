@@ -9,7 +9,6 @@ class CreateProfileForm(ModelForm):
         labels = {
             'year': _('Your Year'),
         }
-        
 
 class CreatePromDateForm(ModelForm):
     class Meta:
