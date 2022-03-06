@@ -18,9 +18,11 @@ def handler404(request, exception):
 def handler500(request, *args, **argv): 
     return render(request, 'promApp/err500.html', status=500)
 
-
 def sorry(request):
     return render(request, "promApp/sorry.html")
+
+def guide(request):
+    return render(request, "promApp/guide.html")
 
 @login_required(login_url="/google/login")
 def app(request):

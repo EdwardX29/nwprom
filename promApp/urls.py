@@ -7,6 +7,7 @@ urlpatterns = [
     path("logout", LogoutView.as_view(), name="logout"),
     path("about", views.about, name="about"),
     path("app", views.app, name="app"),
-    path("sorry", views.sorry, name="sorry")
+    path("sorry", views.sorry, name="sorry"),
+    path("guide", views.guide, name="guide")
 
 ]

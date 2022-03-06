@@ -4,6 +4,14 @@
 {%load static%}
 <link rel="stylesheet" type="text/css" href="{%static 'css/app.css'%}">
 
+<div style="text-align:center;">
+  <p>
+    First name: {{request.user.first_name}}
+    <br>
+    Last name: {{request.user.last_name}} 
+  </p>
+</div>
+
 {%if profileNotCreated%}
 <div id="year-cont" class="col-lg-6 offset-lg-3">
   <span class="row justify-content-center">Enter your year 😊</span><br>
