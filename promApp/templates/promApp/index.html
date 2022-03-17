@@ -17,6 +17,21 @@
   </span>
 </div>
 
+<div class="button-div">
+  <a  id="love-button" class="btn btn-lg btn-outline-danger" style="margin-top:10px;" href="{%provider_login_url 'google'%}">Find me a date!</a>
+</div>
+
+<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+  <h3>
+    Confused?
+  </h3>
+  <p>
+    Read FAQ <a href="{%url 'promApp:about'%}">here</a>
+    <br>
+    Read a user guide <a href="{%url 'promApp:guide'%}">here</a>
+  </p>
+</div>
+
 <div id="clock-cont">
   <h1>Time until Prom:</h1>
   <div id="clockdiv">
@@ -39,8 +54,6 @@
   </div>
 </div>
 
-<div class="button-div">
-  <a  id="love-button" class="btn btn-lg btn-outline-danger" href="{%provider_login_url 'google'%}">Find me a date!</a>
-</div>
+
 
 {%endblock main%}
