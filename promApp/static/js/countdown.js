@@ -1,18 +1,25 @@
 
 function getTimeRemaining(endtime) {
-  const total = endtime - new Date().getTime();
+  let total = endtime - new Date().getTime();
+
+  if (total < 0) {
+    total = 0
+  }
+
   const seconds = Math.floor((total / 1000) % 60);
   const minutes = Math.floor((total / 1000 / 60) % 60);
   const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
   const days = Math.floor(total / (1000 * 60 * 60 * 24));
   
   return {
-    total,
-    days,
-    hours,
-    minutes,
-    seconds
-  };
+      total,
+      days,
+      hours,
+      minutes,
+      seconds
+  }
+  
+  
 }
 
 function initializeClock(id, endtime) {
