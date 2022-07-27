@@ -1,6 +1,8 @@
 # NWProm [website](https://nwprom.herokuapp.com)
 
-![Project Image](./nwprom1.png)
+![Project Image](https://raw.githubusercontent.com/EdwardX29/nwprom/main/.github/images/nwprom1.png)
+
+
 
 ---
 ### Table of Contents
