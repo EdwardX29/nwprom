@@ -1,8 +1,65 @@
-# NWProm [web app](nwprom.herokuapp.com)
-Prototype website for anonymous prom dance matchmaking using Django. Allowed users to find a prom partner without embarassment. Users enter their prospective prom dates into an input and a match is made if the date reciprocates. All inputs are concealed as long until a match is made.
+# NWProm [website](https://nwprom.herokuapp.com)
 
-## Technology
-Website built with Django MVT with Bootstrap. Utilized Google SSO (single sign-on) for authentication and name validation. Heroku for deployment and PostgreSQL as database. 
+![Project Image](./nwprom1.png)
 
-## Installation
-Be sure to run `pip install -r requirements.txt` to get all of the necessary packages.
+---
+### Table of Contents
+You're sections headers will be used to reference location of destination.
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [References](#references)
+- [Author Info](#author-info)
+
+---
+
+## Description
+
+NWProm is a prototype web app for prom date matchmaking. Facilitated anonymous, embarrassment-free prom partner seeking. This website was inspired by [TerpMatch](https://dbknews.com/2019/12/06/umd-terpmatch-dating-website-anonymous/), a matchmaking website for University of Maryland students, and sought to stay true to the original design. **100+ users assisted**.
+
+#### Technologies:
+
+- Python Django MVT
+- Bootstrap 5
+- Google Single Sign On w/ Django Social Auth
+- PostgreSQL
+- Heroku
+
+[Back To The Top](#nwprom-website)
+
+---
+
+## How To Use
+
+#### Step-by-Step Guide:
+  1. Go to https://nwprom.herokuapp.com/
+  2. Sign up with Google
+  3. Enter your prospective prom dates (name & year)
+  4. If a match is made, it will appear
+  ![Match Image](./nwpromMatch.png)
+
+
+#### Local Installation 
+Clone the repo and run the following in your terminal:
+```shell
+pip install -r requirements.txt # collect packages
+python manage.py makemigrations # prepare migrations
+python manage.py migrate # migrate database
+```
+
+
+
+[Back To The Top](#nwprom-website)
+
+---
+
+## References
+[Back To The Top](#nwprom-website)
+
+---
+
+## Author Info
+
+- Github - [EdwardX29](https://github.com/edwardx29)
+
+[Back To The Top](#nwprom-website)
