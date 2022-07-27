@@ -57,7 +57,7 @@ python manage.py migrate # migrate database
 ## References
 [Back To The Top](#nwprom-website)
 - [TerpMatch Article](https://dbknews.com/2019/12/06/umd-terpmatch-dating-website-anonymous/)
--[Django Social Auth Library](https://pypi.org/project/django-social-auth/)
+- [Django Social Auth Library](https://pypi.org/project/django-social-auth/)
 ---
 
 ## Author Info
