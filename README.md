@@ -20,7 +20,7 @@ NWProm is a prototype web app for prom date matchmaking. Facilitated anonymous, 
 
 - Python Django MVT
 - Bootstrap 5
-- Google Single Sign On w/ Django Social Auth
+- Google Single Sign On w/ [Django Social Auth](https://pypi.org/project/django-social-auth/)
 - PostgreSQL
 - Heroku
 
@@ -54,7 +54,8 @@ python manage.py migrate # migrate database
 
 ## References
 [Back To The Top](#nwprom-website)
-- [TerpMatch Article](https://dbknews.com/2019/12/06/umd-terpmatch-dating-website-anonymous/)
+    - [TerpMatch Article](https://dbknews.com/2019/12/06/umd-terpmatch-dating-website-anonymous/)
+    -[Django Social Auth Library](https://pypi.org/project/django-social-auth/)
 ---
 
 ## Author Info
