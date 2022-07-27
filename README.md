@@ -37,7 +37,7 @@ NWProm is a prototype web app for prom date matchmaking. Facilitated anonymous, 
   2. Sign up with Google
   3. Enter your prospective prom dates (name & year)
   4. If a match is made, it will appear
-  ![Match Image](./nwpromMatch.png)
+ ![Project Image](https://raw.githubusercontent.com/EdwardX29/nwprom/main/.github/images/nwpromMatch.png)
 
 
 #### Local Installation 
