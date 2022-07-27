@@ -55,7 +55,7 @@ python manage.py migrate # migrate database
 
 ## References
 [Back To The Top](#nwprom-website)
-
+- [TerpMatch Article](https://dbknews.com/2019/12/06/umd-terpmatch-dating-website-anonymous/)
 ---
 
 ## Author Info
